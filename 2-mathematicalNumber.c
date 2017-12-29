@@ -2,6 +2,7 @@
 float sum(float,float);
 float sub(float,float);
 float multi(float,float);
+float div(float,float);
 int main(int argc, char const *argv[])
 {
 	float x,y;
@@ -11,6 +12,8 @@ int main(int argc, char const *argv[])
 	printf("sum:%f\n",sum(x,y));
 	printf("Subtraction:%f\n",sub(x,y));
 	printf("Multiplication:%f\n",multi(x,y));
+	printf("Division:%f\n",div(x,y));
+
 	return 0;
 }
 float sum(float a, float b){
@@ -21,4 +24,7 @@ float sub(float a, float b){
 }
 float multi(float a, float b){
 	return a*b;
+}
+float div(float a, float b){
+	return a/b;
 }
