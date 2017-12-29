@@ -3,6 +3,7 @@ float sum(float,float);
 float sub(float,float);
 float multi(float,float);
 float div(float,float);
+float pow(float);
 int main(int argc, char const *argv[])
 {
 	float x,y;
@@ -13,6 +14,8 @@ int main(int argc, char const *argv[])
 	printf("Subtraction:%f\n",sub(x,y));
 	printf("Multiplication:%f\n",multi(x,y));
 	printf("Division:%f\n",div(x,y));
+	printf("The power of first number:%f\n",pow(x));
+	printf("The power of second number:%f\n",pow(y));
 
 	return 0;
 }
@@ -27,4 +30,7 @@ float multi(float a, float b){
 }
 float div(float a, float b){
 	return a/b;
+}
+float pow(float a){
+	return a*a;
 }
