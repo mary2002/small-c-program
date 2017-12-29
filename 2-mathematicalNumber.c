@@ -4,6 +4,7 @@ float sub(float,float);
 float multi(float,float);
 float div(float,float);
 float pow(float);
+float cube(float);
 int main(int argc, char const *argv[])
 {
 	float x,y;
@@ -16,6 +17,8 @@ int main(int argc, char const *argv[])
 	printf("Division:%f\n",div(x,y));
 	printf("The power of first number:%f\n",pow(x));
 	printf("The power of second number:%f\n",pow(y));
+	printf("The cube of first number:%f\n",cube(x));
+	printf("The cube of second number:%f\n",cube(y));
 
 	return 0;
 }
@@ -33,4 +36,7 @@ float div(float a, float b){
 }
 float pow(float a){
 	return a*a;
+}
+float cube(float a){
+	return a*a*a;
 }
