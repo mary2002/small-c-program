@@ -5,9 +5,11 @@ float areaSqr(float);
 float envirSqr(float);
 float areaTri(float,float);
 float envireTri(float,float,float);
+float areacir(float);
+float envircir(float);
 int main(int argc, char const *argv[])
 {
-	float x,y,z,s,h,a1,a2,a3;
+	float x,y,z,s,h,a1,a2,a3,r;
 	printf("Enter the width of the rectangel:");
 	scanf("%f",&x);
 	printf("Enter the length of the rectangle:");
@@ -26,6 +28,10 @@ int main(int argc, char const *argv[])
 	scanf("%f%f%f",&a1,&a2,&a3);
 	printf("Triangle area:%f\n",areaTri(s,h));
 	printf("Triangle environment:%f\n",envireTri(a1,a2,a3));
+	printf("Enter the radius of the circle:");
+	scanf("%f",&r);
+	printf("Circle area:%f\n",areacir(r));
+	printf("Circle environment:%f\n",envircir(r));
 	return 0;
 }
 float areaRec(float a, float b){
@@ -45,4 +51,10 @@ float areaTri(float a, float b){
 }
 float envireTri(float a, float b,float c){
 	return a+b+c;
+}
+float areacir(float a){
+	return 3.14*a*a;
+}
+float envircir(float a){
+	return 2*3.14*a;
 }
