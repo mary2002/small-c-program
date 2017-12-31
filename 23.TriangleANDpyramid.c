@@ -1,5 +1,6 @@
 #include <stdio.h>
 void RightTriangle(int);
+void EquilateralTriangle(int);
  int main(int argc, char const *argv[]) {
    int Line;
     printf("The numer of line:");
@@ -7,6 +8,10 @@ void RightTriangle(int);
     printf("\n");
     printf("This is a right triangle:\n");
     RightTriangle(Line);
+    printf("\n");
+    printf("This is an equilateral triangle:\n");
+    printf("\n");
+    EquilateralTriangle(Line);
 
   return 0;
 }
@@ -17,5 +22,15 @@ void RightTriangle(int Line){
       for(int j=1;j<=i;j++)
       printf("*");
      printf("\n");
+  }
+}
+void EquilateralTriangle(int Line){
+  for(int i=0;i<=Line;i++)
+  {
+   for(int j=Line;j>i;j--)
+    printf(" ");
+   for(int k=1;k<2*i;k++)
+    printf("*");
+   printf("\n");
   }
 }
