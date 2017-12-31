@@ -2,6 +2,14 @@
 int cubeSumOFdigits(int);
 int main(int argc, char const *argv[])
 {
+	
+int num;
+	printf("Enter a number:");
+	scanf("%d",&num);
+	if (num == cubeSumOFdigits(num))
+        printf("%d is a arm. \n", num);
+    else
+        printf("%d is not a arm. \n", num);
 
 	return 0;
 }
