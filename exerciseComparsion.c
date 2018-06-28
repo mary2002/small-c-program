@@ -4,6 +4,13 @@ void shallowcopy();
 void deepcopy();
 int main(int argc, char const *argv[])
 {
+
+int *l=malloc(sizeof(int));
+	int m=6;
+	*l=4;
+	l=m;// boxing
+
+	
 	int *n=malloc(sizeof(int));
 	*n=5;
 	void *a=n; // boxing
