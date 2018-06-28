@@ -10,6 +10,9 @@ int *l=malloc(sizeof(int));
 	*l=4;
 	l=m;// boxing
 
+	int *k=malloc(sizeof(int));
+	*k=3;
+    m=(int *)k; //unboxing
 	
 	int *n=malloc(sizeof(int));
 	*n=5;
